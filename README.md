@@ -35,6 +35,8 @@ Once interactivity is trained into the model itself, rather than bolted on by an
 
 ![JoyAI-VL-Interaction capability grid](img/capability-grid.svg)
 
+Beyond the capabilities above, there's a lot more you can do with JoyAI-VL-Interaction, and the examples below show a few. Intuitively, it can also call a live game as it's played, guide you through a recipe step by step while you cook, or generate danmaku-style live comments over a stream on its own. These are just a start, and we'd love for the community to explore many more ways to use it.
+
 Explore more video demos in the [Capability section of the blog](https://joyai-vl-video-future-academy-jd.github.io/JoyAI-VL-Interaction/#capabilities).
 
 ## 🛠️ Our Approach
