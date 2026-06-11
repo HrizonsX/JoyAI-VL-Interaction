@@ -1,21 +1,16 @@
 # JoyAI-VL-Interaction
 
-**JoyAI-VL-Interaction is expected to be fully open-sourced around June 20, 2026.** The release will include the 8B model, training recipe, time-aligned interaction data, and a complete deployable real-time video-language interaction system.
+> 🔥 **Full open-source release is coming around June 20, 2026.** The release will include the 8B model, training recipe, time-aligned interaction data, and a complete deployable real-time video-language interaction system.
 
-- Blog: [JoyAI-VL-Interaction](https://joyai-vl-video-future-academy-jd.github.io/JoyAI-VL-Interaction/)
-- Code: [jd-opensource/JoyAI-VL-Interaction](https://github.com/jd-opensource/JoyAI-VL-Interaction)
+- 🚀 **Blog**: [JoyAI-VL-Interaction](https://joyai-vl-video-future-academy-jd.github.io/JoyAI-VL-Interaction/)
+- 💻 **Code**: [jd-opensource/JoyAI-VL-Interaction](https://github.com/jd-opensource/JoyAI-VL-Interaction)
+- 📄 **Technical Report**: [JoyAI-VL-Interaction-Reportv1.pdf](https://github.com/joyai-vl-video-future-academy-jd/JoyAI-VL-Interaction/blob/main/JoyAI-VL-Interaction-Reportv1.pdf)
 
-## Intro Video
-
-<video controls src="https://echovideo.jd.cn/JoyAI-VL-Interaction/videos/intro-joyai-vl-interaction_2k.mp4" width="100%"></video>
-
-[Open the intro video](https://echovideo.jd.cn/JoyAI-VL-Interaction/videos/intro-joyai-vl-interaction_2k.mp4)
-
-## Overview
+https://github.com/user-attachments/assets/2853fc95-ad21-4972-8206-5f3d19798b14
 
 ![JoyAI-VL-Interaction overview](img/overview.png)
 
-## Introduction
+## ✨ Introduction
 
 JoyAI-VL-Interaction is an open real-time video-language interaction model. Instead of waiting for a user turn, it stays present in a live visual stream, decides when a moment is worth a response, and acts at the right time.
 
@@ -26,23 +21,15 @@ The model is built around four core ideas:
 3. **Agent delegation**: it can hand hard subtasks to a background model, API, or agent while continuing to watch the stream.
 4. **Fully open stack**: we release the model, data, training recipe, and deployable system so the work can be reproduced and extended.
 
-## Capability Demos
+## 🧩 Capability
 
-Once interactivity is trained into the model itself, rather than bolted on by an external harness, a class of capabilities comes naturally. The blog highlights nine of them:
+Once interactivity is trained into the model itself, rather than bolted on by an external harness, a whole class of capabilities comes naturally. These are exactly the things a turn-based assistant can't do well, however fast it answers: being present, acting at the right moment, sensing time, and remembering across a long stream. Here are nine of them, each a natural advantage of building interaction into the model. And for every demo below, we include real screen recordings of Doubao's and Gemini's video-call assistants alongside ours, so the difference in interaction style between an interaction model and a turn-based one is plain to see.
 
-| # | Capability | Description |
-|---|---|---|
-| 01 | Real-time translation | Translates on-screen subtitles and text in real time, keeping pace with the video as it plays rather than with a single frame. |
-| 02 | Monitoring and alerting | Watches a live feed and raises the alert within a second of an emergency, right when it happens. |
-| 03 | App guidance | Follows your phone screen as you use an app and walks you through the task in step with what is on it right now. |
-| 04 | Live commentary | Narrates what is on screen as it unfolds, from a slide deck to a live match, keeping up in real time. |
-| 05 | Real-time counting | Counts target objects or actions on the fly, updating the tally each time one appears. |
-| 06 | Time awareness | Acts on its own sense of elapsed time, speaking on a set interval or reminding you a few seconds later. |
-| 07 | Long visual memory (5+ min) | Holds onto useful details from minutes earlier in the stream and brings them back when they matter. |
-| 08 | Visual-driven interaction | Reads changes in the scene to interact more naturally, like greeting a friend the moment they step into view. |
-| 09 | Agent delegation | Hands hard subtasks to a background model or agent, and keeps watching and interacting while the answer comes back. |
+![JoyAI-VL-Interaction capability grid](img/capability-grid.svg)
 
-## Our Approach
+Explore more video demos in the [Capability section of the blog](https://joyai-vl-video-future-academy-jd.github.io/JoyAI-VL-Interaction/#capabilities).
+
+## 🛠️ Our Approach
 
 ![JoyAI-VL-Interaction system architecture](img/joyvl-system-architecture.png)
 
@@ -58,7 +45,7 @@ Around the model, we build a complete system with streaming ASR and TTS, long-ho
 | Data | **4M time-aligned interaction samples**: still far from saturated, with clear gains from scaling further. |
 | System | **VL-Interaction System**: a deployable system that works out of the box. |
 
-## Evaluation
+## 📊 Evaluation
 
 We evaluate JoyAI-VL-Interaction in **58 real, event-driven visual interaction settings**. Each item is recorded as a live video interaction with JoyAI-VL-Interaction and the corresponding in-app video-call assistant, then judged pairwise by human raters for both response quality and timing.
 
@@ -86,13 +73,13 @@ We evaluate JoyAI-VL-Interaction in **58 real, event-driven visual interaction s
 | Long visual memory | 77.8% | 22.2% | 0.0% |
 | **Overall** | **87.9%** | **10.3%** | **1.7%** |
 
-## Limitations and Future Work
+## 🚧 Limitations and Future Work
 
 **Limitations.** We want to be upfront about scale. The video-call assistants we compare against, Doubao and Gemini, are backed by far larger models and polished through years of product iteration against real users. JoyAI-VL-Interaction is a compact 8B model, and we do not claim to match them everywhere. What we show is that in the advantage zone of a vision-language interaction model, real-time presence, vision-triggered proactivity, and timing across a stream, a far smaller open model can already come out ahead.
 
 **What is next.** We think this is only the beginning. The interaction data we trained on is still small, yet even this amount was enough for useful capabilities to emerge. Scaling time-aligned interaction data, together with the recipe and the system, should push the model much further. Our goal is an assistant that is truly present in the world: one that can notice the right moment, respond without being asked, and still remain open enough for the community to reproduce, inspect, and build on.
 
-## Citation
+## 📝 Citation
 
 ```bibtex
 @techreport{joyai2026vlinteraction,
