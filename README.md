@@ -90,7 +90,7 @@ Then open `https://127.0.0.1:8099` in your browser.
 
 ## 🛠️ System Architecture
 
-JoyAI-VL-Interaction system architecture
+![JoyAI-VL-Interaction system architecture](img/joyvl-system-architecture.png)
 
 At the core of JoyAI-VL-Interaction is one decision the model makes on its own, every second: **speak**, stay **silent**, or **delegate**. We build it on JoyAI-VL-8B and keep speech as pluggable input/output, so the model's only job is to watch and judge the right moment to act. A predictive video codec (AdaCodec) spends only a handful of tokens on each predictable frame and saves full detail for the moments the scene actually changes, keeping the token budget manageable over long streams. The behavior is learned from more than four million time-aligned clips, and refined with reinforcement learning.
 
@@ -110,7 +110,7 @@ Around the model we build a complete, deployable system:
 
 Once interactivity is trained into the model itself rather than bolted on by an external harness, a whole class of capabilities comes naturally — being present, acting at the right moment, sensing time, and remembering across a long stream.
 
-JoyAI-VL-Interaction capability grid
+![JoyAI-VL-Interaction capability grid](img/capability-grid.svg)
 
 Beyond the nine capabilities above, JoyAI-VL-Interaction can call a live game as it's played, guide you through a recipe step by step while you cook, or generate danmaku-style live comments over a stream on its own. Explore more video demos in the [Capability section of the blog](https://joyai-vl-video-future-academy-jd.github.io/JoyAI-VL-Interaction/#capabilities).
 

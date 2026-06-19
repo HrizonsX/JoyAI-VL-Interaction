@@ -90,7 +90,7 @@ cd JoyAI-VL-Interaction
 
 ## 🛠️ 系统架构
 
-JoyAI-VL-Interaction system architecture
+![JoyAI-VL-Interaction system architecture](img/joyvl-system-architecture.png)
 
 JoyAI-VL-Interaction 的核心，是模型每秒自主做出的一个决策：**说话**、保持**静默**，或进行**委托**。系统基于 JoyAI-VL-8B 构建，并将语音作为可插拔的输入输出，因此模型的唯一职责就是观察并判断合适的行动时机。预测式视频编码器 AdaCodec 会对可预测帧只消耗少量 token，并在场景真正变化时保留完整细节，从而让长视频流的 token 预算保持可控。模型行为来自超过四百万条时间对齐片段的学习，并通过强化学习进一步优化。
 
@@ -110,7 +110,7 @@ JoyAI-VL-Interaction 的核心，是模型每秒自主做出的一个决策：**
 
 一旦交互能力被训练进模型本身，而不是通过外部框架外挂上去，一整类能力就会自然出现：在场感、在正确时机行动、感知时间，以及在长视频流中保持记忆。
 
-JoyAI-VL-Interaction capability grid
+![JoyAI-VL-Interaction capability grid](img/capability-grid.svg)
 
 除了上图中的九项能力，JoyAI-VL-Interaction 还可以在游戏直播中实时解说，在你做饭时一步步指导菜谱，或者在直播流上自主生成弹幕式评论。更多视频演示请查看[博客中的能力章节](https://joyai-vl-video-future-academy-jd.github.io/JoyAI-VL-Interaction/#capabilities)。
 
