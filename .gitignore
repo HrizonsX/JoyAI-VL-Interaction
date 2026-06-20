@@ -55,6 +55,8 @@ tmp/
 temp/
 **/tmp/
 **/temp/
+result/
+**/result/
 result_v2/
 **/result_v2/
 summary_vllm_logs/
