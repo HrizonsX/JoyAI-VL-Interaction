@@ -22,7 +22,8 @@
   <a href="#-quick-start"><b>🚀 Quick Start</b></a> |
   <a href="#-capability"><b>🧩 Capability</b></a> |
   <a href="#-evaluation"><b>📊 Evaluation</b></a> |
-  <a href="#-citation"><b>📝 Citation</b></a>
+  <a href="#-community--support"><b>😊 Wechat</b></a> |
+  <a href="#-citation"><b>📝 Citation</b></a> 
 </p>
 
 <p>
